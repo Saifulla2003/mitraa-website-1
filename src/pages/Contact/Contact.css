@@ -2,7 +2,7 @@
 
 .contact-hero {
   width: 100%;
-  height: 280px;
+  height: 300px;
 
  
   background-image: url("../../assets/images/contactrectangle.svg"); 
@@ -14,10 +14,19 @@
   align-items: flex-end;
   position: relative;
 }
-
+.contact-line {
+  width: 6px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  left: 55px;
+  bottom: 20px;
+}
 
 .contact-hero-overlay {
   width: 100%;
+  height: 90px;
   background: rgba(120, 90, 60, 0.35); 
   padding: 32px 80px;
   backdrop-filter: blur(2px);
@@ -29,6 +38,8 @@
   font-size: 32px;
   font-weight: 600;
   color: #ffffff;
+  position:relative;
+  top: -20px;
   
 }
 
@@ -39,6 +50,8 @@
   font-weight: 400;
   color: #ffffff;
   opacity: 0.85;
-  margin-bottom: 0px;
+  position:relative;
+  top: -20px;
 
 }
+

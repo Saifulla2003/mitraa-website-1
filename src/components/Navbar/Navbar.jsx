@@ -12,48 +12,43 @@ import Signinmodel from "../Signinmodel/Signinmodel";
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);   // 🔥 Mobile toggle state
 
   return (
     <>
       <header className="navbar">
         <div className="navbar-container">
 
-       
+          {/* Logo */}
           <div className="navbar-left">
             <img src={logologo} alt="Logo Icon" className="logo-icon" />
             <img src={mitra} alt="Mitraa Text" className="logo-text" />
           </div>
 
-          
-          <nav className="nav-links">
-            <NavLink to="/" end>
+          {/* Nav Links */}
+          <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+            <NavLink to="/" end onClick={() => setMenuOpen(false)}>
               What We Do
             </NavLink>
-
-            <NavLink to="/aboutus">
+            <NavLink to="/aboutus" onClick={() => setMenuOpen(false)}>
               Who We Are
             </NavLink>
-
-            <NavLink to="/careers">
+            <NavLink to="/careers" onClick={() => setMenuOpen(false)}>
               Careers
             </NavLink>
-
-            <NavLink to="/news">
+            <NavLink to="/news" onClick={() => setMenuOpen(false)}>
               News & Events
             </NavLink>
-
-            <NavLink to="/portfolio">
+            <NavLink to="/portfolio" onClick={() => setMenuOpen(false)}>
               Portfolio
             </NavLink>
-
-            <NavLink to="/contact">
+            <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
               Contact Us
             </NavLink>
           </nav>
 
-         
+          {/* Right Section */}
           <div className="nav-right">
-
             <div className="icon-circle">
               <img src={search} alt="search" />
             </div>
@@ -69,7 +64,16 @@ function Navbar() {
               <img src={contact} alt="signin" />
               <span>Sign in</span>
             </div>
+          </div>
 
+          {/* 🔥 Hamburger Menu */}
+          <div
+            className={`menu-toggle ${menuOpen ? "open" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
 
         </div>
