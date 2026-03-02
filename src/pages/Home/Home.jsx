@@ -1,4 +1,4 @@
-import Hero from "../../components/hero/Hero";
+import Hero from "../../components/Hero/Hero";
 import Discover from "../../components/Discover/Discover";
 import Execution from "../../components/Execution/Execution";
 import Service from "../../components/Service/Service";
