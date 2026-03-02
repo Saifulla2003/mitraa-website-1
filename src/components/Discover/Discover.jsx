@@ -1,0 +1,116 @@
+import "./Discover.css";
+import bgImage from "../../assets/images/discover.svg";
+import birdimage from "../../assets/images/birdimage.svg";
+import brainImage from "../../assets/images/brain.svg";
+import robotHand from "../../assets/images/handimage.svg";
+
+import robot from "../../assets/images/robot.svg";
+import problem1 from "../../assets/images/problem1.svg";
+import problem2 from "../../assets/images/problem2.svg";
+import birdinicon from "../../assets/images/birdinicon.svg";
+
+
+function Discover() {
+  return (
+    <section className="discover">
+         <img
+        src={birdinicon}
+        alt="Floating Bird"
+        className="discover-floating-bird"
+      />
+
+
+    
+      <div className="discover-content">
+             <h2 className="discover-title">
+      Discover what’s happening
+    </h2>
+
+        <div className="discover-grid">
+         
+
+        <div className="card small-card top-card">
+  
+ <div className="top-card-image">
+  <img src={problem1} alt="Problem Base" className="problem-base" />
+  <img src={problem2} alt="Problem Overlay" className="problem-overlay" />
+</div>
+
+  <div className="top-card-text">
+    <h3>Problem We Solve</h3>
+    <p>
+      Growing workloads, manual processes, disconnected systems,
+      and high operational costs slowing decisions and limiting visibility.
+    </p>
+  </div>
+
+</div>
+
+         
+<div className="card small-card bottom-card">
+  
+  <div className="bottom-card-image">
+    <img src={robot} alt="AI Robot" />
+  </div>
+
+  <div className="bottom-card-content">
+    <h3>AI in Action</h3>
+    <p>
+      AI automates tasks, understands data, integrates with your tools,
+      and works in real time seamlessly within your workflow.
+    </p>
+  </div>
+
+</div>
+
+          
+          <div className="center-space">
+            <img src={birdimage} alt="birdimage" />
+          </div>
+
+       
+<div className="card wide-card top-right">
+  <div className="top-right-content">
+    <div className="top-right-text">
+      <h3>How We Think About AI</h3>
+      <p>
+        We design AI as a support layer for your business, not a replacement
+        for people. Our systems understand context, assist decisions,
+        and work quietly in the background to improve everyday operations.
+      </p>
+    </div>
+
+    <div className="top-right-image">
+      <img src={brainImage} alt="AI Brain" />
+    </div>
+  </div>
+</div>
+
+          
+<div className="card wide-card bottom-right">
+  <div className="bottom-right-content">
+
+    <div className="bottom-right-text">
+      <h3>Business Impact</h3>
+      <p>
+        Reduced operational load, faster and smarter decisions,
+        lower long-term costs, and better customer experiences —
+        so your teams focus on growth.
+      </p>
+    </div>
+
+    <div className="bottom-right-image">
+      <img src={robotHand} alt="Robot Hand" />
+    </div>
+
+  </div>
+</div>
+
+        </div>
+      </div>
+
+    </section>
+  );
+}
+
+export default Discover;

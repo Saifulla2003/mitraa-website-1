@@ -1,0 +1,91 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+
+.modal-card {
+  width: 738px;
+  height: 425px;
+  background: white;
+  background-image: url("../../assets/images/signinimg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 43px;
+  padding: 60px 40px;
+  border: 1px solid rgba(91, 62, 218, 0.2);
+  position: relative;
+  box-shadow: 
+    0px 0px 12px rgba(91, 62, 218, 0.25),
+    0px 20px 60px rgba(108, 99, 255, 0.15);
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.modal-tabs {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f0f1f6;
+  padding: 6px;
+  border-radius: 30px;
+  display: flex;
+  gap: 6px;
+}
+
+.modal-tabs button {
+  border: none;
+  padding: 8px 24px;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-tabs .active {
+  background: linear-gradient(90deg, #6C63FF, #514AD7);
+  color: white;
+}
+
+
+.modal-title {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #060821;
+}
+
+
+.modal-desc {
+  margin-top: 12px;
+  color: #666;
+}
+
+.modal-signin-btn {
+  margin-top: 40px;
+  width: 280px;
+  height: 50px;
+  border-radius: 28px;
+  border: none;
+  background: linear-gradient(90deg, #6C63FF, #514AD7);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

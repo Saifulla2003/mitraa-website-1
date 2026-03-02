@@ -1,0 +1,66 @@
+.careers-mid {
+  width: 100%;
+  padding: 100px 40px;
+  background: #f6f7fb;
+}
+
+
+.careers-mid-title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #14131a;
+  margin-bottom: 70px;
+}
+
+
+.careers-mid-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+.career-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.career-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+.career-card h3 {
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #14131a;
+}
+
+
+.career-card p {
+  margin-top: 10px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7b7b85;
+}
+
+
+.career-line {
+  margin-top: 20px;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #6C63FF, #514AD7);
+  border-radius: 4px;
+}

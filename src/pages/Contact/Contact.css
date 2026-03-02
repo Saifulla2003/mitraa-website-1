@@ -1,0 +1,44 @@
+
+
+.contact-hero {
+  width: 100%;
+  height: 280px;
+
+ 
+  background-image: url("../../assets/images/contactrectangle.svg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+
+.contact-hero-overlay {
+  width: 100%;
+  background: rgba(120, 90, 60, 0.35); 
+  padding: 32px 80px;
+  backdrop-filter: blur(2px);
+}
+
+
+.contact-hero-overlay h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  
+}
+
+
+.contact-hero-overlay p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.85;
+  margin-bottom: 0px;
+
+}

@@ -1,0 +1,392 @@
+
+
+.discover {
+  position: relative;
+  width: 100%;
+  padding: 120px 0 140px 0;
+  display: flex;
+  justify-content:flex-start;
+  overflow: hidden; 
+
+  background:
+  radial-gradient(circle at 20% 20%, rgba(120, 140, 255, 0.25), transparent 50%),
+  radial-gradient(circle at 60% 10%, rgba(210, 160, 255, 0.25), transparent 50%),
+  radial-gradient(circle at 10% 70%, rgba(255, 220, 180, 0.25), transparent 50%),
+  linear-gradient(180deg, #f6f7fb 0%, #f3f4f8 100%);
+ 
+}
+
+.discover-floating-bird {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  width: 75px;
+  z-index: 10;
+}
+
+
+
+.discover-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 45.6px;
+  line-height: 56px;
+  letter-spacing: -1.2px;
+  color:rgba(14, 23, 38, 1);
+
+
+  margin-left: 110px;  
+  margin-bottom: 100px; 
+}
+
+
+
+
+.discover-content {
+  position: relative;
+  z-index: 2;
+  width: 1320px;
+ 
+ 
+}
+
+
+
+
+.discover-grid {
+  display: grid;
+
+  grid-template-columns: 253px 325px 690px;
+  grid-template-rows: 292px 292px;
+
+  column-gap: 16px;
+  row-gap: 14px; 
+
+  margin-left: 100px; 
+  margin-right: 60px; 
+}
+
+
+.card {
+  border-radius: 21px;
+  border: 1.5px solid transparent;
+
+ 
+  background-image:
+    linear-gradient(#ffffff, #ffffff),  background */
+    linear-gradient(180deg, #5437D0 0%, #6549E7 100%);
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  padding: 28px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.top-card {
+  grid-column: 1;
+  grid-row: 1;
+
+  width: 253px;
+  height: 292px;
+
+  border-radius: 21px;
+  overflow: hidden;
+  position: relative;
+
+  background: linear-gradient(
+    107.26deg,
+    #9095FF 0%,
+    #514AD7 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.top-card-image {
+  position: absolute;
+  top: 8px;
+  width: 174.68px;
+  height: 127.87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.problem-base {
+  width: 85%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+.problem-overlay {
+  position: absolute;
+  width: 70%;     
+  height: auto;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+}
+
+.top-card-text h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 56px;
+  letter-spacing: 0px;
+
+  color: rgba(255, 255, 255, 1);
+ 
+  
+}
+
+.top-card-text p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  opacity: 0.9;
+  color:rgba(255, 255, 255, 1);
+
+}
+
+
+
+
+.bottom-card {
+  grid-column: 1;
+  grid-row: 2;
+
+  width: 253px;
+  height: 292px;
+
+  background: rgba(255, 255, 255, 1);
+
+  border-radius: 21px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+
+.bottom-card-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.bottom-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.bottom-card-content {
+  width: 234px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.bottom-card-content h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 56px;
+  letter-spacing: 0px;
+  color: rgba(30, 30, 30, 1);
+   margin-top: 4px;
+}
+
+
+.bottom-card-content p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0px;
+
+  color: rgba(137, 136, 147, 1);
+}
+
+
+
+.center-space {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-radius: 28px;
+  background: linear-gradient(107.26deg, #737AFF 0%, #514AD7 100%);
+  
+  position: relative;
+  overflow: visible;
+}
+
+.center-space img {
+  position: absolute;
+  bottom: -20px;    
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 120%;    
+  max-width: none;
+
+  z-index: 3;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+.top-right {
+  display: flex;
+  align-items: center;
+  padding: 40px 38px;
+  border-radius: 21px;
+  border: 1px solid rgba(91, 62, 218, 0.28);
+  background: #ffffff;
+}
+
+
+.top-right-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.top-right-text {
+  width: 422px; 
+}
+
+
+.top-right-text h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 56px;
+  letter-spacing: -1.6px;
+  margin-bottom: 18px;
+  color: rgba(30, 30, 30, 1);
+
+}
+
+.top-right-text p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: rgba(137, 136, 147, 1);
+
+}
+
+
+.top-right-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-right-image img {
+  width: 190px; 
+  height: auto;
+}
+
+
+.bottom-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px 56px;
+  border-radius: 28px;
+  overflow: hidden;
+
+ 
+  background: linear-gradient(
+    110deg,
+    #0b0a3c 0%,
+    #16106f 55%,
+    #241a88 100%
+  );
+
+  color: white;
+}
+
+
+.bottom-right-text {
+  width: 50%;
+  z-index: 2;
+}
+
+.bottom-right-text h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: -1.6px;
+  margin-bottom: 24px;
+}
+
+.bottom-right-text p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bottom-right-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  overflow: visible;
+  z-index: 1;
+}
+
+/* VERTICAL IMAGE FIX */
+.bottom-right-image img {
+  width: 100%;       
+  height: auto;
+
+  transform: rotate(90deg); 
+  transform-origin: center;
+
+  position: relative;
+  bottom: -40px;      
+}
+
+
+

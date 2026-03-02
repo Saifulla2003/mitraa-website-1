@@ -1,0 +1,180 @@
+/* ============================= */
+/* SECTION WRAPPER */
+/* ============================= */
+
+.services-section {
+  width: 100%;
+  padding: 80px 0;
+  background-position: center top;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.services-container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.services-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -1.2px;
+  color: #0e1726;
+  margin-bottom: 72px;
+}
+
+/* ============================= */
+/* GRID LAYOUT */
+/* 4 Columns × 2 Rows */
+/* ============================= */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns: 310px 310px 310px 310px;
+  grid-template-rows: 311px 311px;
+
+  gap: 24px;
+}
+
+/* ============================= */
+/* SMALL SERVICE CARDS */
+/* ============================= */
+
+.service-card {
+  width: 310px;
+  height: 311px;
+
+  background: #fefefe;
+  border-radius: 24px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow:
+    0px 2px 4px rgba(0, 0, 0, 0.14),
+    0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #060821;
+  margin-bottom: 16px;
+}
+
+.service-card p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b6b75;
+}
+
+/* Button */
+
+.service-btn {
+  width: 140px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #6C63FF;
+  background: transparent;
+  color: #6C63FF;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  background: #6C63FF;
+  color: white;
+}
+
+/* ============================= */
+/* ROBOT FEATURE COLUMN */
+/* SECOND COLUMN */
+/* ============================= */
+
+.service-feature {
+  grid-column: 2;            /* SECOND COLUMN */
+  grid-row: 1 / span 2;      /* SPAN BOTH ROWS */
+
+  width: 310px;
+  height: 646px;             /* 311 + 311 + gap */
+
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+
+  box-shadow:
+    0px 2px 4px rgba(0, 0, 0, 0.14),
+    0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+.service-feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.service-feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.55)
+  );
+
+  z-index: 1;
+}
+
+
+/* Overlay Content */
+
+
+
+.feature-overlay {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  right: 32px;
+  z-index: 2;
+  color: white;
+}
+
+
+
+.feature-overlay h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.feature-overlay p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-btn {
+  background: #6C63FF;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}

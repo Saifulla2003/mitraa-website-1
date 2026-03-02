@@ -1,0 +1,64 @@
+
+
+.web-hero {
+  width: 100%;
+  height: 320px; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  padding: 60px 80px;
+  box-sizing: border-box;
+}
+
+
+
+.web-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 15, 60, 0.9) 0%,
+    rgba(5, 15, 60, 0.6) 40%,
+    rgba(5, 15, 60, 0.2) 70%,
+    rgba(5, 15, 60, 0.05) 100%
+  );
+}
+
+
+
+.web-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+
+
+.web-line {
+  width: 6px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+
+
+.web-text h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.web-text p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}

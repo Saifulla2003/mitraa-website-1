@@ -1,0 +1,91 @@
+.career-end {
+  width: 100%;
+  padding: 100px 40px;
+  background: linear-gradient(
+    135deg,
+    #6C63FF 0%,
+    #514AD7 100%
+  );
+  color: white;
+}
+
+.career-end-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.career-end-title {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.career-end-desc {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  max-width: 900px;
+  margin-bottom: 60px;
+  opacity: 0.95;
+}
+
+
+.career-end-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+.career-end-card {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.career-image-wrapper {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff10; 
+}
+
+.career-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.career-end-card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+
+.career-btn {
+  margin-top: 10px;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.career-btn span {
+  margin-left: 6px;
+}
+
+.career-btn:hover {
+  background: white;
+  color: #514AD7;
+}
