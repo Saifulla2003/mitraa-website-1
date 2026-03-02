@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./NewsMid.css";
+import "./Newsmid.css";
 import comingSoon from "../../assets/images/comingsoon.svg"; 
 
 function NewsMid() {
