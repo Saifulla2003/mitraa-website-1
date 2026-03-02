@@ -1,5 +1,5 @@
 import "./AboutusMid.css";
-import Aboutmidimg from "../../assets/images/aboutmidimg.svg";   
+import Aboutmidimg from "../../assets/images/Aboutmidimg.svg";   
 import aboutmidtext from "../../assets/images/aboutmidtext.svg"; // quote SVG
 import rightImage from "../../assets/images/aboutmidrightimg.svg";  
 
