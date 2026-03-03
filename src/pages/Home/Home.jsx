@@ -11,11 +11,11 @@ function Home() {
     <>
       <Hero />
       <Discover />
-      <Execution />
+       <Execution />
       <Service />
       <Explore />
       <ContactSection />
-      <Footer />
+      <Footer />  
     </>
   );
 }

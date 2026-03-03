@@ -9,7 +9,10 @@ function Hero() {
 
   return (
     <>
-      <section className="hero">
+    <section
+  className="hero"
+  style={{ "--hero-bg": `url(${heroImage})` }}
+>
         <div className="hero-container">
 
           <div className="hero-left">
