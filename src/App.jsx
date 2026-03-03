@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 import Navbar from "./components/Navbar/Navbar";
@@ -14,8 +14,8 @@ import Execution from "./components/Execution/Execution";
 
 function App() {
   return (
-    <Router>
-       <ScrollToTop />  
+    <>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
@@ -29,10 +29,8 @@ function App() {
         <Route path="/web" element={<Web />} />
         <Route path="/service" element={<Service />} />
         <Route path="/execution" element={<Execution />} />
-
       </Routes>
-
-    </Router>
+    </>
   );
 }
 
