@@ -2,7 +2,8 @@
 
 .explore-section {
   width: 100%;
-  height: 720px;
+ min-height: 720px;
+padding: 120px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,19 +14,19 @@
 
 
 .explore-container {
-  width: 1320px;
+  width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 40px;
   position: relative;
 }
 
 
-
 .explore-content {
-  width: 682px;                 
-  margin-left: auto;            
-  text-align: right;            
+  max-width: 680px;
+  margin-left: auto;
+  text-align: right;
 }
-
 
 
 .explore-title {
@@ -88,4 +89,113 @@
   font-style:italic;
   line-height: 32px;
   font-weight: 500;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width:1024px){
+
+.explore-container{
+  padding:0 30px;
+}
+
+.explore-content{
+  max-width:560px;
+}
+
+.explore-title{
+  font-size:34px;
+  line-height:46px;
+}
+
+.explore-description{
+  font-size:18px;
+  line-height:28px;
+}
+
+.explore-quote{
+  position:static;
+  margin-top:40px;
+  text-align:right;
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.explore-section{
+  padding:80px 0;
+  min-height:auto;
+  align-items:flex-start;
+}
+
+.explore-container{
+  padding:0 24px;
+}
+
+/* CENTER CONTENT */
+.explore-content{
+  max-width:100%;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* TITLE */
+.explore-title{
+  font-size:28px;
+  line-height:38px;
+}
+
+/* DESCRIPTION */
+.explore-description{
+  font-size:16px;
+  line-height:26px;
+}
+
+/* BUTTON */
+.explore-btn{
+  margin-top:10px;
+}
+
+/* QUOTE MOVES BELOW */
+.explore-quote{
+  position:static;
+  margin-top:40px;
+  text-align:center;
+  font-size:16px;
+  line-height:26px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.explore-container{
+  padding:0 20px;
+}
+
+.explore-title{
+  font-size:24px;
+  line-height:32px;
+}
+
+.explore-description{
+  font-size:15px;
+  line-height:24px;
+}
+
+.explore-btn{
+  width:130px;
+  height:40px;
+}
+
+.explore-quote{
+  font-size:14px;
+}
+
 }

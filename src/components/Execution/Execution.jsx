@@ -88,6 +88,7 @@ function Execution() {
 
         </div>
       </div>
+      <hr style={{border: "1px solid #E0E0E0", margin: "0"}} />
     </section>
   );
 }

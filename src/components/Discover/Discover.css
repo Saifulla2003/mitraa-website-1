@@ -407,7 +407,7 @@
 
   /* ALL CARDS FULL WIDTH */
   .discover-card,
-  .center-space {
+{
      height: 250%;
      width:auto;
      align-items: center;
@@ -469,6 +469,7 @@
   .discover-card.bottom-card {
     padding: 25px;
     height: 250px;
+    
   }
 
   .bottom-card-image {
@@ -504,7 +505,9 @@
 
   /* TOP RIGHT CARD */
   .discover-card.top-right {
-    padding: 30px 25px;
+     padding: 25px;
+    height: 250px;
+    width:90%;
   }
 
   .top-right-text {
@@ -533,15 +536,18 @@
   }
 
   .top-right-image img {
-    width: 30%;
+    /* width: 30%;
     height: auto;
     opacity: 0.6;
-    overflow-y: auto;
+    overflow-y: auto; */
+    display:none;
   }
 
   /* BOTTOM RIGHT CARD */
   .discover-card.bottom-right {
-    padding: 30px 25px;
+     padding: 25px;
+    height: 250px;
+    width:90%;
   }
 
   .bottom-right-text {
@@ -568,9 +574,10 @@
   }
 
   .bottom-right-image img {
-    width: 220px;
+    /* width: 320px;
     height: auto;
-    transform: rotate(90deg);
+    transform: rotate(90deg); */
+    display:none;
   }
 
   /* Floating Bird Hide on Mobile */
