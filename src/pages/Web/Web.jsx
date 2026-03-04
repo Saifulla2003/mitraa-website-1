@@ -10,7 +10,7 @@ function Web() {
   return (
     <>
       <Webhero />
-      <Webmid />
+      {/* <Webmid /> */}
       <ContactSection />
        <Footer />
     </>
