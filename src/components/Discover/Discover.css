@@ -328,273 +328,184 @@
 
 
 /* ================= TABLET RESPONSIVE ================= */
-
-@media (max-width: 1024px) {
-
-  .discover {
-    padding: 100px 0;
-  }
-
-  .discover-content {
-    padding: 0 30px;
-  }
-
-  .discover-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-  }
-
-  /* Left cards stack */
-  .discover-card.top-card,
-  .discover-card.bottom-card {
-    grid-column: span 1;
-    grid-row: auto;
-  }
-
-  /* Center bird full width */
-  .center-space {
-    grid-column: span 2;
-    width: 100%;
-    height: 500px;
-  }
-
-  .center-space img {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-  }
-
-  /* Right cards full width */
-  .discover-card.top-right,
-  .discover-card.bottom-right {
-    grid-column: span 2;
-    width: 100%;
-    height: auto;
-    padding: 40px;
-  }
-
-  .bottom-right-image img {
-    width: 300px;
-  }
-}
-
-
 /* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 768px) {
 
-  .discover {
-    padding: 40px 0;
-  }
+.discover {
+   padding:40px 0 60px 0;
+     width: 100%;
+  max-width: 100%;
 
-  .discover-title {
-    font-size: 32px;
-    line-height: 42px;
-    padding: 0 20px;
-    margin-bottom: 50px;
-  }
-
-  .discover-content {
-    padding: 0 20px;
-  }
-
-  .discover-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  /* ALL CARDS FULL WIDTH */
-  .discover-card,
-{
-     height: 250%;
-     width:auto;
-     align-items: center;
-     justify-content: center;
-;
-  }
-
-  .center-space img {
-    height: 100%;
-    width: auto;
-    left: 0;
-    bottom: 0;
-  }
-
-  /* LEFT TOP CARD */
-  .discover-card.top-card {
-    padding: 25px;
-    height: 250px;
-  }
-
-  
-
-  .top-card-text h3 {
-    font-size: 25px;
-    line-height: 28px;
-    top: 22px;
-  }
-
-  .top-card-text p {
-    font-size: 16px;
-    line-height: 20px;
-    top: 16px;
-  }
-
-  
-.top-card-image {
-  position: absolute;
-  top: 25px;
-  width: 190px;
 }
 
-.problem-base {
+.discover-title {
+  font-size: 28px;
+  line-height: 36px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.discover-content {
+  padding: 0 16px;
   width: 100%;
-  position: relative;
-  z-index: 1;
+  max-width: 100%;
 }
 
-.problem-overlay {
-  position: absolute;
-  width: 75%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-
-  /* LEFT BOTTOM CARD */
-  .discover-card.bottom-card {
-    padding: 25px;
-    height: 250px;
-    
-  }
-
-  .bottom-card-image {
-  position: relative;
-  right: 26px;
-  bottom: -21px;
-  }
-
-   .bottom-card-image img{
-      width: 118%;
-      height: 115%;
-      object-fit: cover;
-   }
-
-  .bottom-card-content h3 {
-    font-size: 25px;
-    line-height: 28px;
-    top: 28px;
-    position: relative;
-  }
-
-  .bottom-card-content p {
-    font-size: 16px;
-    line-height: 20px;
-     top: 20px;
-    position: relative;
-  }
-
-  /* CENTER BIRD */
-  .center-space {
-    display: none;
-  }
-
-  /* TOP RIGHT CARD */
-  .discover-card.top-right {
-     padding: 25px;
-    height: 250px;
-    width:90%;
-  }
-
-  .top-right-text {
+/* STACK CARDS */
+.discover-grid{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
     width: 100%;
-    padding: 0;
-  }
-
-  .top-right-text h3 {
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 0;
-    bottom: 0;
-  }
-
-  .top-right-text p {
-    font-size: 15px;
-    line-height: 24px;
-    bottom: 0;
-  }
-
-  .top-right-image {
-    position: relative;
-    right: auto;
-    bottom: 80px;
-    margin-top: 20px;
-  }
-
-  .top-right-image img {
-    /* width: 30%;
-    height: auto;
-    opacity: 0.6;
-    overflow-y: auto; */
-    display:none;
-  }
-
-  /* BOTTOM RIGHT CARD */
-  .discover-card.bottom-right {
-     padding: 25px;
-    height: 250px;
-    width:90%;
-  }
-
-  .bottom-right-text {
-    width: 100%;
-    padding: 0;
-  }
-
-  .bottom-right-text h3 {
-    font-size: 22px;
-    line-height: 32px;
-  }
-
-  .bottom-right-text p {
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .bottom-right-image {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .bottom-right-image img {
-    /* width: 320px;
-    height: auto;
-    transform: rotate(90deg); */
-    display:none;
-  }
-
-  /* Floating Bird Hide on Mobile */
-  .discover-floating-bird {
-    display: none;
-  }
+  max-width: 100%;
 }
 
 
-@media (max-width: 480px) {
+.discover-card.top-right,
+.discover-card.bottom-right{
+  width:100%;
+}
 
-  .discover-title {
-    font-size: 26px;
-    line-height: 36px;
-  }
+/* ALL CARDS SAME SIZE */
+.discover-card{
+  width:100%;
+  max-width:100%;
+  height:auto;
+  min-height:220px;
+  text-align: left;
+}
 
-  .center-space {
-    height: 350px;
-  }
+.top-card-image{
+  display:none;
+}
+/* LEFT TOP CARD */
+
+.discover-card.top-card{
+  justify-content:flex-end;
+}
+
+.top-card-text h3{
+  font-size:20px;
+  line-height:26px;
+  top:0;
+   text-align:left;
+}
+
+.top-card-text p{
+  font-size:14px;
+  line-height:20px;
+  top:0;
+   text-align:left;
+}
+
+}
+
+
+
+
+/* LEFT BOTTOM CARD */
+
+.discover-card.bottom-card{
+  justify-content:flex-end;
+}
+
+.bottom-card-image{
+  position:absolute;
+  bottom:90px;
+  width:100%;
+  display: none;
+}
+
+.bottom-card-image img{
+  width:100%;
+  height:auto;
+}
+
+.bottom-card-content h3{
+  font-size:20px;
+  line-height:26px;
+  text-align: left;
+}
+
+.bottom-card-content p{
+  font-size:14px;
+  line-height:20px;
+  text-align: left;
+}
+
+.bottom-card-content{
+  text-align:left;
+}
+
+
+/* CENTER CARD HIDDEN */
+
+.center-space{
+  display:none;
+}
+
+
+/* RIGHT TOP CARD */
+
+.discover-card.top-right{
+  width:100%;
+  height:260px;
+}
+
+.top-right-text{
+  width:100%;
+  padding:0;
+  text-align: left;
+}
+
+.top-right-text h3{
+  font-size:20px;
+  line-height:28px;
+}
+
+.top-right-text p{
+  font-size:14px;
+  line-height:22px;
+}
+
+.top-right-image{
+  display:none;
+}
+
+
+/* RIGHT BOTTOM CARD */
+
+.discover-card.bottom-right{
+  width:100%;
+  height:260px;
+}
+
+.bottom-right-text{
+  width:100%;
+  padding:0;
+  text-align: left;
+}
+
+.bottom-right-text h3{
+  font-size:20px;
+  line-height:28px;
+}
+
+.bottom-right-text p{
+  font-size:14px;
+  line-height:22px;
+}
+
+.bottom-right-image{
+  display:none;
+}
+
+
+/* FLOATING BIRD HIDDEN */
+
+.discover-floating-bird{
+  display:none;
+}
+
 }
