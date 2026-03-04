@@ -2,7 +2,7 @@
 .footer-section {
   position: relative;
   width: 100%;
-  min-height: 721px;
+  min-height: 600px;
   background: #ffffff;
   padding: 120px 0 60px 0;
   overflow: hidden;
@@ -29,12 +29,13 @@
 
 
 .footer-container {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   padding: 0 40px;
   position: relative;
-  bottom: 80px;
+  bottom: -50px;
   z-index: 2;
+  top:-50px;
   
 }
 
