@@ -1,7 +1,7 @@
 import "./Webmid.css";
 
 import customImg from "../../assets/images/webface.svg";
-import webAppImg from "../../assets/images/weblap.svg";
+import webAppImg from "../../assets/images/weblapimg.svg.svg";
 
 function Webmid() {
   return (
